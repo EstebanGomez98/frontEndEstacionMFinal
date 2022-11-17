@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center">
+    <div class="form-acceso col-md-3 mt-5">
+        <form id="formalogin" class="validarFormulario" novalidate>
+            <div class="card">
+                <div class="card-header">
+                    Usuarios registrados
+                </div>
+                <div class="card-body">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Correo" />
+                        <label for="usu">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="pass" placeholder="clave" />
+                        <label for="cla">Contraseña</label>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <button onClick="loginDelSistema()" class="btn btn-primary">Iniciar sesion</button>
+                    </button>
+                <div class="card-body">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="correoRecu" placeholder="Correo" />
+                        <label for="usu">Correo electrónico</label>
+                    </div>
+                </div>
+                <div class="card-footer text-muted"></div>
+                    <button onClick="recuperarComtraseña()" class="btn btn-primary">Recuperar Comtraseña</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

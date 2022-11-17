@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+    <div class="col-md-5 mt-4">
+        <form action="javascript:crearObservaciones();" id="formaEstado" class="validarFormulario" novalidate>
+            <div class="card">
+                <div class="card-header">
+                    Formulario de creación de Estado
+                </div>
+
+                <div class="card-body">
+
+                    <div class="mb-3">
+                        <label for="idUsuario" class="form-label">Id del usuario</label>
+                        <input type="number" class="form-contEstado" id="idUsuario" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="date" class="form-contEstado" id="fecha" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripcion</label>
+                        <input type="text" class="form-contEstado" id="descripcion" required />
+                    </div>
+                </div>
+                
+
+                <div class="card-footer text-muted">
+                    <button type="submit" class="btn btn-primary">Crear Observacion</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center">
+
+    <div class="col-md-5 mt-4">
+        <div class="alert alert-primary" id="estadoMsgOk" style="display: none;">
+            Login exitoso correctamente
+        </div>
+
+        <div class="alert alert-danger" id="estadoMsgError" style="display: none;">
+            El Estado no se pudo crear en la base de datos
+        </div>
+    </div>
+
+</div>

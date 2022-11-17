@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+    <div class="col-md-5 mt-4"><!--  | funcion para grear usuarios-->
+        <form action="javascript:crearUsuario();" id="formaUser" class="validarFormulario" novalidate>
+            <div class="card">
+                <div class="card-header">
+                    Formulario de creación de Usuarios
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Rol" class="form-label">Rol</label>
+                        <div id="selecRoles">
+                            <select name="cars" id="cars">
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Estado" class="form-label">Estado</label>
+                        <div id="selecEstados">
+                            <select name="cars" id="cars">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="contraseña" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="contraseña2" class="form-label">Repetir contraseña</label>
+                        <input type="password" class="form-control" id="contraseña2" required />
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

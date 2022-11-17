@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center">
+    <div class="col-md-5 mt-4">
+        <form action="javascript:crearSensor();" id="formaEstado" class="validarFormulario" novalidate>
+            <div class="card">
+                <div class="card-header">
+                    Formulario de creación de Sensor
+                </div>
+
+                <div class="card-body">
+
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Descripcion del Sensor</label>
+                        <input type="text" class="form-contEstado" id="descripcion" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Id del Estado</label>
+                        <input type="number" class="form-contEstado" id="idEstado" required />
+                    </div>
+                </div>
+
+                <div class="card-footer text-muted">
+                    <button type="submit" class="btn btn-primary">Crear Sensor</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

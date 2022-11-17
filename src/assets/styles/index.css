@@ -1,0 +1,23 @@
+.check-amarillo {
+  color: #fed93e;
+}
+
+.check-rojo {
+  color: #82140e;
+}
+
+.check-verde {
+  color: #1d7612;
+}
+
+.form-acceso input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-acceso input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

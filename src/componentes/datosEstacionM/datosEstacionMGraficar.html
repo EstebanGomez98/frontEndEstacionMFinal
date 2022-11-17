@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center">
+    <div class="col-md-8 mt-4">
+        <form action="javascript:obtenerTodosDatosEMGrficar();" id="formaUser" class="validarFormulario" novalidate>
+                <h1>DashBoard estacion meteorologica</h1>
+                <div class="mb-3">
+                    <label for="EstacionM" class="form-label">Estacion Meteorologica</label>
+                    <div id="selecEstacionM">
+                        <select name="cars" id="cars">
+                        </select>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <button type="submit" class="btn btn-primary">Graficar</button>
+                </div>
+                <canvas id="ChartTempHume" style="width:100%;max-width:600px"></canvas>
+                <canvas id="ChartVelViento" style="width:100%;max-width:600px"></canvas>
+                <table class="table table-sm" id="tablaDirViento"></table>
+                <canvas id="Chartllubia" style="width:100%;max-width:600px"></canvas>
+        </form>
+    </div>
+</div>

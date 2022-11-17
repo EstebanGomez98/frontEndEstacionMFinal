@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Consultorio</title>
+  <link rel="icon" type="image/x-icon" href="src/assets/images/otroicon.ico">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="src/assets/styles/index.css">
+
+  <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="loadHeader()">
+  <!-- Cuerpo html -->
+  <div class="container-fluid">
+    <div id="idCabecera"></div>
+
+    <div id="idRuteo">
+    </div>
+  </div>
+
+  <!-- Javascripts obligatorios -->
+  <script src="node_modules/routing/route.js"></script>
+  <script src="node_modules/routing/router.js"></script>
+  <script src="src/rutas/ruteo.js"></script>
+  <script src="node_modules/loadheader/header.js"></script>
+  <script src="src/assets/js/logica.js"></script>
+  <!-- Roles -->
+  <script src="src/assets/js/roles/listar.js"></script>
+  <script src="src/assets/js/roles/crear.js"></script>
+  <script src="src/assets/js/roles/admin.js"></script>
+  <!--usuarios-->
+  <script src="src/assets/js/Usuarios/listar.js"></script>
+  <script src="src/assets/js/Usuarios/crear.js"></script>
+  <script src="src/assets/js/Usuarios/admin.js"></script>
+  <!-- Estados -->
+  <script src="src/assets/js/estados/listar.js"></script>
+  <script src="src/assets/js/estados/crear.js"></script>
+  <script src="src/assets/js/estados/admin.js"></script>
+  <!-- nEstacionMeteorologica -->
+  <script src="src/assets/js/nEstacionMeteorologica/listar.js"></script>
+  <script src="src/assets/js/nEstacionMeteorologica/crear.js"></script>
+  <script src="src/assets/js/nEstacionMeteorologica/admin.js"></script>
+  <!-- sensores -->
+  <script src="src/assets/js/sensores/listar.js"></script>
+  <script src="src/assets/js/sensores/crear.js"></script>
+  <script src="src/assets/js/sensores/admin.js"></script>
+  <!-- observaciones -->
+  <script src="src/assets/js/observaciones/listar.js"></script>
+  <script src="src/assets/js/observaciones/crear.js"></script>
+  <script src="src/assets/js/observaciones/admin.js"></script>
+  <!--Datos Estacion Meteorologica-->
+  <script src="src/assets/js/datosEstacionM/listar.js"></script>
+  <script src="src/assets/js/datosEstacionM/graficar.js"></script>
+  <!--Login-->
+  <script src="src/assets/js/acceso.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Recuperar Comtraseña-->
+  <script src="src/assets/js/recuperacion.js"></script>
+  <!--openweather-->
+  <script src="src/assets/js/WeatherPanel.js"></script>
+
+
+  <script type="text/javascript" >
+  //variables globales
+  const urlBase = "https://localhost:44368/api";
+    var token=null;
+    var idRol;
+    var idEst;
+    if(token == null && idRol != "1") {
+      window.location.href ="#login";
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+  </body>
+
+</html>
