@@ -1,4 +1,4 @@
-<div class="justify-content-center">
+<div class="d-flex justify-content-center">
   <div class="col-md-6 p-5 mt-5 text-bg-dark rounded-3 justify-content-center">
     <h2 class="tituloProyecto">Estacions meteorologicas LESTOMA</h2>
     <p>
@@ -9,12 +9,56 @@
       del almacenamiento de la información y una mejora notable en la
       comunicación en tiempo real.
     </p>
+    <br />
+    <button onclick="openWeatherLocation();" class="btn btn-primary">
+      Datos Meteorologicos
+    </button>
   </div>
-  <br/>
-  <div>
-    <button onClick="openWeatherLocation('facatativa')" class="btn btn-primary">Datos Meteorologicos</button>
-    <div id="cardTemp">
-    </div>
-  </div>
-  <br/>
 </div>
+<br/>
+<div className="mt-5">
+    <div class="container">
+        <div class="card mb-3 mx-auto bg-dark text-light">
+        <div class="row g-0">
+            <div class="col-md-4">
+            <h3 class="card-title" id="nameCity"></h3>
+            <p class="card-date" id="date"></p>
+            <h1 class="card-temp"id="tempera"></h1>
+            <p class="description" id="iconP"></p>
+            <p class="card-desc" id="descr"></p>
+            <hr />
+            <h5 class="card-text" id="tempMax"></h5>
+            <h5 class="card-text" id="tempMin"></h5>
+            <h5 class="card-text" id="sensTerm"></h5>
+            <h5 class="card-text" id="hume"></h5>
+            <h5 class="card-text" id="valVinet"></h5>
+
+            </div>
+            <div class="col-md-8">
+
+            <div class="row mt-4">
+                <div class="col">
+                <p id="date3"></p>
+                
+                <p class="description" id="iconUrl3"></p>
+                <p class="card-desc" id="iconUrl3T"></p>
+                <p class="temp" id="temp_a"></p>
+                </div>
+                <div class="col">
+                <p id="date6"></p>
+                <p class="description" id="iconUrl6" ></p>
+                <p class="card-desc" id="iconUrl6T"></p>
+                <p class="temp" id="temp_b"></p>
+                </div>
+                <div class="col">
+                <p id="date9"></p>
+                <p class="description"id="iconUrl9" ></p>
+                <p class="card-desc" id="iconUrl9T"></p>
+                <p class="temp" id="temp_c"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+ </div>

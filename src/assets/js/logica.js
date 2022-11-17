@@ -1,7 +1,6 @@
 function logicaNegocio(url, param) {
     switch (url) {
         case 'src/componentes/inicio.html':
-            //
             break;
             //datos
         case 'src/componentes/datosEstacionM/datosEstacionMlistado.html':
